@@ -50,6 +50,7 @@ button:hover {
   z-index: -1;
   grid-column: 1;
   width: 35%;
+  height: 100%;
 }
 
 .form {

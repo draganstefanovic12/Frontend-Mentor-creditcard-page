@@ -12,14 +12,14 @@ export const Input = ({
 }: InputProps) => {
   return (
     <>
-      <label id="exp-date">{name}</label>
+      <label>{name}</label>
       <input
         onChange={(e) => dispatch({ type: type, action: e.target.value })}
         placeholder={placeholder}
         className={`${className}`}
         id={id}
-        minLength={minLength}
-        maxLength={maxLength}
+        minLength={minLength ? minLength : 0}
+        maxLength={maxLength ? maxLength : 120}
         required
       />
     </>

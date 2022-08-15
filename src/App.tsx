@@ -1,4 +1,5 @@
 import "./App.css";
+import "./MobileApp.css";
 import { Form } from "./components/Form";
 import { Action } from "./types";
 import { useReducer } from "react";

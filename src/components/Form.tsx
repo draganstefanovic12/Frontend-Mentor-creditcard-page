@@ -17,18 +17,7 @@ export const Form = ({ dispatch }: FormProps) => {
       ) : (
         <form className="form" onSubmit={(e) => handleSubmit(e)}>
           <Input
-            name="CARD NUMBER"
-            className="big-input"
-            dispatch={dispatch}
-            pattern="[0-9 ]*"
-            maxLength={19}
-            minLength={19}
-            placeholder="e.g 1234 5678 9123 0000"
-            type="CARD_NUM"
-          />
-
-          <Input
-            className="big-input"
+            className="big-input input"
             dispatch={dispatch}
             pattern="[a-zA-Z ]*"
             id="name"
@@ -36,10 +25,20 @@ export const Form = ({ dispatch }: FormProps) => {
             name="CARDHOLDER NAME"
             type="CARD_NAME"
           />
+          <Input
+            name="CARD NUMBER"
+            className="big-input input"
+            dispatch={dispatch}
+            pattern="[0-9 ]*"
+            maxLength={19}
+            minLength={19}
+            placeholder="e.g 1234 5678 9123 0000"
+            type="CARD_NUM"
+          />
           <div className="exp-date-cvc-cont">
             <div>
               <Input
-                className="exp-date-input"
+                className="exp-date-input input"
                 dispatch={dispatch}
                 id="exp-date"
                 maxLength={2}
@@ -49,7 +48,7 @@ export const Form = ({ dispatch }: FormProps) => {
                 type="CARD_MM"
               />
               <Input
-                className="exp-date-input"
+                className="exp-date-input input"
                 dispatch={dispatch}
                 id="exp-date"
                 maxLength={2}
@@ -61,7 +60,7 @@ export const Form = ({ dispatch }: FormProps) => {
             <div>
               <Input
                 name="CVC"
-                className="cvc-input"
+                className="cvc-input input"
                 dispatch={dispatch}
                 id="exp-date"
                 maxLength={3}

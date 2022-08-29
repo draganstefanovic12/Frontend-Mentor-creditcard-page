@@ -12,4 +12,4 @@ Tech Stack used:
 - TypeScript
 - Vite
 
-[!alt text](https://i.imgur.com/4EqVgJn.png)
+![alt text](https://i.imgur.com/4EqVgJn.png)
